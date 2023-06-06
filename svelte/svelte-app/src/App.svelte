@@ -22,6 +22,7 @@
 <h1>Svelte + Spring!</h1>
 <input type="text" bind:value={name}/>
 <button on:click={getGreeting(name)}>Get Greeting</button>
+<button on:click={getPhoto}>View Photo</button>
 <p>{greeting}</p>
 {#if imgSrc != ''}
 <img src={imgSrc} alt="Fetched from API" />
