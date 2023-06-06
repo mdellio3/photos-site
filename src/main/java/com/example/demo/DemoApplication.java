@@ -12,7 +12,7 @@ public class DemoApplication {
 		SpringApplication.run(DemoApplication.class, args);
 	}
 
-	@CrossOrigin(origins = "http://127.0.0.1:5000")
+	@CrossOrigin(origins = "http://localhost:5000")
 	@ResponseBody
 	@GetMapping("/hello")
 	public String hello(@RequestParam(value="name", defaultValue="World")String name) {
